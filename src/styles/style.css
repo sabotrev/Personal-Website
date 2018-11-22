@@ -1,0 +1,216 @@
+html {
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/* Common */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.row {
+  margin: unset;
+}
+
+.max-height {
+  height: 100%;
+}
+
+.half-height {
+  height: 50%;
+}
+
+.footer {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+}
+
+.vertical-align {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.poof {
+  opacity: 0;
+}
+
+.send-it {
+  cursor: e-resize;
+}
+
+.copy {
+  cursor: copy;
+}
+
+/* Architecture */
+.header {
+  height: 100vh;
+  width: 100%;
+  min-height: fit-content;
+  background-color: #F1F2F2;
+  color: #294E6F;
+}
+
+.section {
+  height: 100vh;
+  min-height: fit-content;
+}
+
+.subsection {
+  padding-top: 5%;
+  font-size: 3.5em;
+  font-size: 16px;
+}
+
+.intro {
+  padding: 6em 10% 0 0;
+}
+
+.title-intro {
+  font-family: 'Lora', serif;
+  font-size: 3.5em;
+}
+
+.subtitle-intro {
+  padding-left: 32px;
+  border-left: #F04A54 solid 4px;
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.name {
+  background-color: #F04A54;
+  color: #F1F2F2;
+  padding: 0px 8px;
+}
+
+.cartoon {
+  padding-top: 8em;
+}
+
+.contact {
+  font-size: 2em;
+}
+
+.section-about {
+  background-color: #F1F2F2;
+  color: #294E6F;
+}
+
+.subsection-about {
+  width: 90%;
+  padding: 4em 0 8em 5%;
+}
+
+.title-about {
+  font-family: 'Lora', serif;
+}
+
+.subtitle-about {
+  padding-left: 30%;
+}
+
+.section-about p {
+  color: #072138;
+  font-weight: 200;
+}
+
+.section-skills {
+  background-color: #F1F2F2;
+  color: #294E6F;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .subsection {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cartoon-head {
+    /* width: 15% !important; */
+  }
+  .subsection {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartoon-head {
+    /* width: 15% !important; */
+  }
+  .subsection {
+    font-size: 14px;
+  }
+  .subtitle-about {
+    padding-left: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cartoon-head {
+    /* width: 15% !important; */
+  }
+  .subsection {
+    font-size: 12px;
+  }
+} 
+
+/* Images */
+.cartoon-head {
+  /* background: url(../assets/images/trevor.png) no-repeat center; */
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover #dropdownMenuButton {
+  background-color: #3e8e41;
+}
+
+
+
+/* 
+whites
+  alabaster:    #FcFcFc
+  black-haze:   #F1F2F2
+  iron-light:   #E6E7E8
+  iron-dark:    #D1D3D4
+  silver-sand:  #BCBEC0
+
+blues
+  bermuda-gray: #6D8BA5
+  bismark:      #466A89
+  elephant:     #113655
+  nile-blue:    #162F48
+  astronaut:    #294E6F <- good background
+  black-pearl:  #072138
+
+reds
+  carnation:    #F04A54 <- text color
+*/
