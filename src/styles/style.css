@@ -3,6 +3,44 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  @viewport {  
+    orientation: portrait;  
+  }
+  body {
+    font-size: 30px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    font-size: 50px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    font-size: 60px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 70px;
+  }
+}
+
 p {
   font-size: 1.5em;
 }
@@ -74,30 +112,58 @@ p {
 
 .subsection {
   padding-top: 5%;
-  font-size: 3.5em;
+  font-size: 1em;
   font-size: 16px;
 }
 
 .intro {
-  padding: 6em 10% 0 0;
+  padding: 3em 10% 0 0;
 }
 
 .title-intro {
   font-family: 'Lora', serif;
-  font-size: 3.5em;
+  font-size: 1em;
 }
 
 .subtitle-intro {
-  padding-left: 32px;
+  padding-left: 0.7em;
   border-left: #F04A54 solid 4px;
-  font-size: 3em;
+  font-size: 0.7em;
   font-weight: 200;
 }
 
 .name {
+  padding: 0px 8px;
+  width: fit-content;
+  display: inline-block;
+  transition: transform 0.3s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.name:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: attr(data-heading);
   background-color: #F04A54;
   color: #F1F2F2;
-  padding: 0px 8px;
+  transition: color 0.3s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  text-align: center;
+}
+
+@keyframes flip {
+  to {
+    transform: rotateX(90deg) translateY(-1em);
+  }
 }
 
 .cartoon {
