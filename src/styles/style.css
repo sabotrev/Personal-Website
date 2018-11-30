@@ -1,6 +1,11 @@
 html {
   /* font-family: 'Source Sans Pro', sans-serif; */
   font-family: 'Open Sans', sans-serif;
+  background-color: #F1F2F2;
+}
+
+body {
+  background-color: #F1F2F2;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -9,35 +14,35 @@ html {
     orientation: portrait;  
   }
   body {
-    font-size: 30px;
+    font-size: 14px;
   }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   body {
-    font-size: 40px;
+    font-size: 18px;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   body {
-    font-size: 50px;
+    font-size: 22px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   body {
-    font-size: 60px;
+    font-size: 26px;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body {
-    font-size: 70px;
+    font-size:30px;
   }
 }
 
@@ -97,17 +102,24 @@ p {
 }
 
 /* Architecture */
-.header {
-  height: 100vh;
+#icon {
+  width: 4em;
+  height: auto;
+}
+
+#banner {
+  height: 60vh;
   width: 100%;
   min-height: fit-content;
   background-color: #F1F2F2;
   color: #294E6F;
+  padding: 2em 0;
 }
 
 .section {
-  height: 100vh;
+  /* height: 100vh; */
   min-height: fit-content;
+  background-color: #F1F2F2;
 }
 
 .subsection {
@@ -117,18 +129,18 @@ p {
 }
 
 .intro {
-  padding: 3em 10% 0 0;
 }
 
 .title-intro {
   font-family: 'Lora', serif;
-  font-size: 1em;
+  font-size: 2.25em;
 }
 
 .subtitle-intro {
+  width: 20em;
   padding-left: 0.7em;
   border-left: #F04A54 solid 4px;
-  font-size: 0.7em;
+  font-size: 1.25em;
   font-weight: 200;
 }
 
@@ -257,6 +269,11 @@ p {
 
 .dropdown:hover #dropdownMenuButton {
   background-color: #3e8e41;
+}
+
+/* Bootstrap Override */
+p, .card-text {
+  font-size: 0.6em;
 }
 
 
