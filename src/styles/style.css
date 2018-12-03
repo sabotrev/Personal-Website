@@ -102,13 +102,17 @@ p {
 }
 
 /* Architecture */
+.border-top {
+  border-top: #F04A54 solid 0.2em !important;
+}
+
 #icon {
   width: 4em;
   height: auto;
 }
 
 #banner {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   min-height: fit-content;
   background-color: #F1F2F2;
@@ -117,7 +121,7 @@ p {
 }
 
 .section {
-  /* height: 100vh; */
+  height: 70vh;
   min-height: fit-content;
   background-color: #F1F2F2;
 }
@@ -142,6 +146,7 @@ p {
   border-left: #F04A54 solid 4px;
   font-size: 1.25em;
   font-weight: 200;
+  color: rgba(41,78,111, 0.8);
 }
 
 .name {
