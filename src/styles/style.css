@@ -111,6 +111,10 @@ p {
   height: auto;
 }
 
+.nav-item {
+  font-size: 0.75em;
+}
+
 #banner {
   height: 70vh;
   width: 100%;
