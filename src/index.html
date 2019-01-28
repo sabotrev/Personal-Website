@@ -16,38 +16,13 @@
 
     <div class="container-fluid border-top">
 
-      <!-- Header -->
-      <header id="header" class="alt">
-        <nav class="navbar navbar-expand-sm navbar-light justify-content-between">
-          <!-- <div class="container-fluid"> -->
-              <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                  <img id="icon" src="./assets/images/trevor.png" alt="Trevor outline">
-                </a>
-              </div>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Experience</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Résumé</a>
-                  </li>
-                </ul>
-              </div>
-          <!-- </div> -->
-          <!-- Social links placeholder -->
-        </nav>
-      </header>
+      <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Experience</a>
+        <a class="nav-link disabled" href="#">Résumé</a>
+      </nav>
 
       <!-- Banner -->
       <section id="banner">
@@ -67,54 +42,16 @@
           </div>
       </section>
 
-      <!-- About -->
-      <section class="section">
-        <div class="container">
-        </div>
-      </section>
-        
-
-      <!-- Skills -->
-      <section class="section">
-        <div class="container">
-          <div class="card-deck">
-            <div class="card rounded-top border-0">
-              <!-- Image Placeholder -->
-              <div class="card-body">
-                <h5 class="card-title">Front End</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-            <div class="card rounded-top border-0">
-              <!-- Image Placeholder -->
-              <div class="card-body">
-                <h5 class="card-title">Back End</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-            <div class="card rounded-top border-0">
-              <!-- Image Placeholder -->
-              <div class="card-body">
-                <h5 class="card-title">Design</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section class="section">
-        <div class="container">
-        </div>
-      </section>
-
     </div> <!-- container-fluid -->
 
+    <!-- Dark Overlay element -->
+    <div id="overlay"></div>
+
     <!-- Script tags -->
+    <script src="../controller.js"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   </body>
 </html>
