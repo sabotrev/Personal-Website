@@ -1,8 +1,13 @@
-function toggleNav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+toggleNav = () =>{
+  var sideNav = document.getElementById("mySidenav");
+  var navIcon = document.getElementById("icon");
+  if (navIcon.className === 'menuIcon') {
+    navIcon.className = 'closeIcon';
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("navIcon").className = "fa fa-close";
   } else {
-    x.className = "topnav";
+    navIcon.className = 'menuIcon';
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("navIcon").className = "fa fa-bars";
   }
 }
