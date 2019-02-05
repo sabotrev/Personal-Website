@@ -1,13 +1,12 @@
-toggleNav = () =>{
+toggleNav = (element) => {
   var sideNav = document.getElementById("mySidenav");
-  var navIcon = document.getElementById("icon");
-  if (navIcon.className === 'menuIcon') {
-    navIcon.className = 'closeIcon';
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("navIcon").className = "fa fa-close";
+  var navIcon = document.getElementById("navIcon");
+
+  if (navIcon.className === 'menu') {
+    sideNav.style.width = "250px";
   } else {
-    navIcon.className = 'menuIcon';
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("navIcon").className = "fa fa-bars";
+    sideNav.style.width = "0";
   }
+
+  navIcon.classList.toggle('scale-out-center');
 }
