@@ -107,6 +107,10 @@ p {
   border-top: #F04A54 solid 0.2em !important;
 }
 
+.border-bottom {
+  border-bottom: #F04A54 solid 0.2em !important;
+}
+
 #icon {
   height: auto;
 }
@@ -142,6 +146,7 @@ p {
   font-size: 1.25em;
   font-weight: 200;
   color: rgba(41,78,111, 0.8);
+  text-transform: uppercase;
 }
 
 .name {
@@ -176,4 +181,12 @@ p {
   to {
     transform: rotateX(90deg) translateY(-1em);
   }
+}
+
+#info {
+  height: 70vh;
+  width: 100%;
+  min-height: fit-content;
+  background-color: #294E6F;
+  padding: 2em 0;
 }

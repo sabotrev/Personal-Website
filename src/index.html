@@ -18,21 +18,28 @@
 
       <div class="container-fluid border-top">
 
-      <div class="topnav" id="myTopnav">
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Experience</a>
-        <a href="#">Résumé</a>
-        <a href="javascript:void(0);" id="icon" onclick="toggleNav()">
-          <div class="menu" id="navIcon"></div>
-        </a>
-      </div>
+      <header class="topnav" id="myTopnav">
+        <ul>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Experience</a>
+          <a href="#">Résumé</a>
+          <a href="javascript:void(0);" id="icon" onclick="toggleNav()">
+            <div class="menu" id="navIcon">
+              <span>Menu</span>
+              <i class="fa fa-bars" id="symbol"></i>
+            </div>
+          </a>
+        </ul>
+      </header>
 
-      <div class="sidenav" id="mySidenav" onclick="toggleNav()">
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Experience</a>
-        <a href="#">Résumé</a>
+      <div class="sidenav" id="mySidenav">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Résumé</a></li>
+        </ul>
       </div>
 
       <!-- Banner -->
@@ -46,7 +53,6 @@
                 </h1>
                 <h1 class="subtitle-intro">
                     A front end software engineer who believes everything should just work.
-                    I like to design & develop composition that is clean and clear.
                 </h1>
               </div>
             </div>
