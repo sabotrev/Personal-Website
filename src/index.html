@@ -19,33 +19,46 @@
     <div class="container-fluid border-top">
 
       <!-- Top navigation -->
-      <header class="topnav" id="myTopnav">
-        <ul>
-          <a href="#">About</a>
-          <a href="#">Skills</a>
-          <a href="#">Experience</a>
-          <a href="#">Résumé</a>
-          <a href="javascript:void(0);" id="icon" onclick="toggleNav()">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/nav/logo2.svg" width="45" height="45" alt="Logo">
+        </a>
+          <button class="navbar-toggler" id="icon" type="button" onclick="toggleNav()" aria-expanded="false" aria-label="Toggle navigation">
             <div class="menu" id="navIcon">
               <span>Menu</span>
               <i class="fa fa-bars" id="symbol"></i>
             </div>
-          </a>
-        </ul>
-      </header>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Résumé</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
       <!-- Side navigation -->
-      <div class="sidenav" id="mySidenav">
+      <nav class="sidenav" id="mySidenav">
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Experience</a></li>
           <li><a href="#">Résumé</a></li>
         </ul>
-      </div>
+      </nav>
 
       <!-- Banner -->
-      <section id="banner">
+      <header id="banner">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12">
@@ -54,13 +67,13 @@
                   Hey, I'm <span class="name" data-heading="Trevor">Trevor</span>.
                 </h1>
                 <h1 class="subtitle-intro">
-                    A front end software engineer who believes everything should just work.
+                  software engineer
                 </h1>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
     </div> <!-- container-fluid -->
 
