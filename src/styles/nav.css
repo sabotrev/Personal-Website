@@ -1,10 +1,24 @@
 /* Top nav */
-.nav-item .nav-link {
-  color: #294E6F;
+.nav-item {
+  padding: 0 12px;
 }
 
-.nav-item .nav-link .disabled{
-  color: red;
+.nav-item:not(:last-child){
+  border-bottom: #F04A54 solid;
+}
+
+.nav-item:last-child {
+  border-bottom: #4C5064 solid;
+}
+
+.nav-item .nav-link {
+  color: #4C5064;
+  font-weight: 800;
+  font-size: medium;
+}
+
+.nav-item:hover {
+  opacity: 0.5;
 }
 
 #icon {
@@ -26,7 +40,7 @@
 }
 
 .menu:hover {
-  color: #F1F2F2;
+  color: #EBEBEB;
   background-color: #F04A54;
 }
 
@@ -54,7 +68,7 @@
   text-align: center;
   text-decoration: none;
   font-size: 25px;
-  color: #F1F2F2;
+  color: #EBEBEB;
   display: block;
   transition: 0.3s;
 }

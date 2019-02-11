@@ -1,11 +1,11 @@
 html {
   /* font-family: 'Source Sans Pro', sans-serif; */
   font-family: 'Open Sans', sans-serif;
-  background-color: #F1F2F2;
+  background-color: #EBEBEB;
 }
 
 body {
-  background-color: #F1F2F2;
+  background-color: #EBEBEB;
   overflow-x: hidden;
   overflow-y: overlay;
 }
@@ -124,15 +124,13 @@ p {
   height: 70vh;
   width: 100%;
   min-height: fit-content;
-  background-color: #F1F2F2;
-  color: #294E6F;
+  color: #4C5064;
   padding: 2em 0;
 }
 
 .section {
   height: 70vh;
   min-height: fit-content;
-  background-color: #F1F2F2;
 }
 
 .title-intro {
@@ -141,12 +139,10 @@ p {
 }
 
 .subtitle-intro {
-  width: 20em;
-  padding-left: 0.7em;
-  border-left: #F04A54 solid 4px;
   font-size: 1.25em;
   font-weight: 200;
-  color: rgba(41,78,111, 0.5);
+  color: #4C5064;
+  opacity: 0.8;
   text-transform: uppercase;
 }
 
@@ -171,11 +167,16 @@ p {
   height: 100%;
   content: attr(data-heading);
   background-color: #F04A54;
-  color: #F1F2F2;
+  color: #EBEBEB;
   transition: color 0.3s;
   transform: rotateX(-90deg);
   transform-origin: 50% 0;
   text-align: center;
+}
+
+.portrait {
+  width: 6em;
+  height: auto;
 }
 
 @keyframes flip {
@@ -186,7 +187,7 @@ p {
 
 .name:hover:before {
   color: #F04A54;
-  background-color: #F1F2F2;
+  background-color: #EBEBEB;
 }
 
 #info {
@@ -195,15 +196,4 @@ p {
   padding: auto;
   width: 100%;
   min-height: fit-content;
-}
-
-.info-image {
-  height: 100%;
-  background-color: rgba(41,78,111, 0.5);
-}
-
-.info-text {
-  height: 100%;
-  background-color: #294E6F;
-  border-left: #F04A54 solid 0.2em !important;
 }
