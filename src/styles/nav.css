@@ -85,3 +85,40 @@
     font-size: 18px;
   }
 }
+
+.icon-bar {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-bar {
+    display: none;
+  }
+}
+
+.link {
+  background-color: #F04A54;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
+
+.line {
+  background-color: #294E6F;
+}
+
+
