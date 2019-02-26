@@ -144,6 +144,7 @@ p {
   color: #fff;
   opacity: 0.8;
   text-transform: uppercase;
+  margin: 20px 0 60px 0;
 }
 
 .name {
@@ -174,6 +175,19 @@ p {
   text-align: center;
 }
 
+.btn-contact {
+  background-color: #fff;
+  color: #0768de;
+}
+
+.btn-contact a {
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  background-color: #9fc1ea; 
+}
+
 .portrait {
   width: 6em;
   height: auto;
@@ -195,8 +209,9 @@ p {
 }
 
 .heading {
-  color: #293340;
+  color: #0764d5;
   padding: 1em 0;
+  font-weight: 700;
 }
 
 .info-image {
@@ -205,4 +220,9 @@ p {
 
 .info-text {
   height: 70vh;
+}
+
+footer {
+  background-color: #1b222b;
+  height: 20vh;
 }

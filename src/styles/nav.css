@@ -19,8 +19,8 @@
 }
 
 .nav-item:last-child {
-  color: #4C5064;
-  border-bottom: #4C5064 solid;
+  color: #1b222b;
+  border-bottom: #1b222b solid;
 }
 
 .nav-item .nav-link {
@@ -60,7 +60,7 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #294E6F;
+  background-color: #1b222b;
   overflow-x: hidden;
   padding-top: 8em;
   transition: 0.5s;
@@ -135,11 +135,11 @@
 }
 
 .line {
-  color: #294E6F;
-  border-right: #294E6F solid;
+  color: #1b222b;
+  border-right: #1b222b solid;
 }
 
 .line i {
-  color: #294E6F;
+  color: #1b222b;
 }
 
