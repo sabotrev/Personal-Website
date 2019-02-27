@@ -1,4 +1,8 @@
 /* Top nav */
+.navbar {
+  align-items: end !important;
+}
+
 .brand {
   width: 4em;
   height: auto;
@@ -96,7 +100,7 @@
 
 .icon-bar {
   position: absolute;
-  top: 50%;
+  top: 70%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
