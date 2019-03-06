@@ -18,150 +18,174 @@
   <body>
 
     <div class="container-fluid hero-wrap p-xl-5 p-lg-5 p-md-4">
+      <div class="container">
 
-      <!-- Top navigation -->
-      <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="#">
-            <img src="./assets/nav/logo.png" width="90" height="90" alt="Logo">
-        </a>
-        <button class="navbar-toggler" id="icon" type="button" onclick="toggleNav()" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="menu" id="navIcon">
-            <span>Menu</span>
-            <i class="fa fa-bars" id="symbol"></i>
+        <!-- Top navigation -->
+        <nav class="navbar navbar-expand-md">
+          <a class="navbar-brand" href="#">
+              <img src="./assets/nav/logo.png" class="logo" alt="Logo">
+          </a>
+          <button class="navbar-toggler" id="icon" type="button" onclick="toggleNav()" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="menu" id="navIcon">
+              <span>Menu</span>
+              <i class="fa fa-bars" id="symbol"></i>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Résumé</a>
+              </li>
+            </ul>
           </div>
-        </button>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Résumé</a>
-            </li>
+        </nav>
+
+        <!-- Side navigation -->
+        <nav class="sidenav" id="mySidenav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Résumé</a></li>
           </ul>
+        </nav>
+
+        <!-- Icon Bar -->
+        <div class="icon-bar">
+          <a href="https://www.linkedin.com/in/trevor-sabo/" target="_blank" class="link">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/sabotrev" target="_blank" class="link">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="https://codepen.io/sabotrev/" target="_blank" class="link">
+            <i class="fa fa-codepen"></i>
+          </a>
+          <a href="https://www.instagram.com/trevor_5ever/" target="_blank" class="link">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="#" class="line">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a href="#" class="line">
+            <i class="fa fa-phone"></i>
+          </a>
         </div>
-      </nav>
 
-      <!-- Side navigation -->
-      <nav class="sidenav" id="mySidenav">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Résumé</a></li>
-        </ul>
-      </nav>
+        <!-- Banner -->
+        <header id="banner">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-12">
+                <div class="intro">
+                  <h1 class="title-intro">
+                    Hey, I'm <span class="name" data-heading="Trevor">Trevor</span>.
+                  </h1>
+                  <h1 class="subtitle-intro">
+                    <span>software engineer</span>
+                  </h1>
+                  <button type="button" class="btn btn-lg btn-contact">
+                    <a href="mailto:sabotrev@gmail.com" target="_blank" rel="nofollow noopener noreferrer">Say Hi Back</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
 
-      <!-- Icon Bar -->
-      <div class="icon-bar">
-        <a href="https://www.linkedin.com/in/trevor-sabo/" target="_blank" class="link">
-          <i class="fa fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/sabotrev" target="_blank" class="link">
-          <i class="fa fa-github"></i>
-        </a>
-        <a href="https://codepen.io/sabotrev/" target="_blank" class="link">
-          <i class="fa fa-codepen"></i>
-        </a>
-        <a href="https://www.instagram.com/trevor_5ever/" target="_blank" class="link">
-          <i class="fa fa-instagram"></i>
-        </a>
-        <a href="#" class="line">
-          <i class="fa fa-envelope"></i>
-        </a>
-        <a href="#" class="line">
-          <i class="fa fa-phone"></i>
-        </a>
-      </div>
+      </div> <!-- container -->
+    </div> <!-- container-fluid -->
 
-      <!-- Banner -->
-      <header id="banner">
+    <div class="container-fluid p-xl-5 p-lg-5 p-md-4">
+
+      <section class="content-section" id="about">
         <div class="container">
-          <div class="row text-center">
-            <div class="col-12">
-              <div class="intro">
-                <h1 class="title-intro">
-                  Hey, I'm <span class="name" data-heading="Trevor">Trevor</span>.
-                </h1>
-                <h1 class="subtitle-intro">
-                  <span>software engineer</span>
-                </h1>
-                <button type="button" class="btn btn-lg btn-contact">
-                  <a href="mailto:sabotrev@gmail.com" target="_blank" rel="nofollow noopener noreferrer">Say Hi Back</a>
-                </button>
+          <div class="content-section-heading">
+            <h2 class="mb-5 text-center">
+              <span class="underline">About</span>
+            </h2>
+          </div>
+          <div class="jumbotron text-center">
+            <p>I’m a full stack software engineer who is passionate about all things front end. I believe the software we write should be just as efficient as the experience we give the user. Whether it be down at a phone, straight at a laptop, or up at a projector… I enjoy building intuitive interfaces inside and out.</p>
+            <hr class="my-4">
+            <p>I graduated from Michigan State University in 2017 with a degree in Computer Engineering as well as a minor in Graphic Design. After school I started my career as a Software Engineer with General Motors. Working with the Advanced team at GM I am very fortunate to be exposed to a wide array of different projects.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="skills">
+        <div class="container">
+          <div class="content-section-heading">
+            <h2 class="mb-5 text-center">
+              <span class="underline">Skills</span>
+            </h2>
+          </div>
+          <div class="card-group">
+            <div class="card text-center">
+              <img class="card-img-top" alt="Front end">
+              <div class="card-body">
+                <h4 class="card-title">Front End</h4>
+                <p class="card-text">
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>HTML & CSS</li>
+                    <li>AnguJlarJS</li>
+                    <li>AnguJlar 2</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img class="card-img-top" alt="Back end">
+              <div class="card-body">
+                <h4 class="card-title">Back End</h4>
+                <p class="card-text">
+                  <ul>
+                    <li>Java</li>
+                    <li>Spring Framework</li>
+                    <li>Kotlin</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img class="card-img-top" alt="Design">
+              <div class="card-body">
+                <h4 class="card-title">Design</h4>
+                <p class="card-text">
+                  <ul>
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                    <li>InDesign</li>
+                  </ul>
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </section>
+
+      <section class="content-section" id="experience">
+        <div class="container">
+          <div class="content-section-heading">
+            <h2 class="mb-5 text-center">
+              <span class="underline">Experience</span>
+            </h2>
+          </div>
+          </div>
+        </div>
+      </section>
+
     </div> <!-- container-fluid -->
-
-    <section class="content-section" id="about">
-      <div class="container">
-        <div class="content-section-heading">
-          <h2 class="mb-5">
-            <span class="underline">About</span>
-          </h2>
-        </div>
-        <div class="row text-center">
-          <div class="col-lg-6 ml-auto">
-            <p class="lead">
-                I’m a full stack software engineer who is passionate about all things front end. I believe the software we write should be just as efficient as the experience we give the user. Whether it be down at a phone, straight at a laptop, or up at a projector… I enjoy building intuitive interfaces inside and out.
-            </p>
-          </div>
-          <div class="col-lg-6 mr-auto">
-            <p class="lead">
-              I graduated from Michigan State University in 2017 with a degree in Computer Engineering as well as a minor in Graphic Design. After school I started my career as a Software Engineer with General Motors. Working with the Advanced team at GM I am very fortunate to be exposed to a wide array of different projects.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" id="skills">
-      <div class="container">
-        <div class="content-section-heading">
-          <h2 class="mb-5">
-            <span class="underline">Skills</span>
-          </h2>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="mx-auto mb-3">
-              <!-- TODO: Add icon -->
-            </span>
-            <h4>
-              <strong>Front End</strong>
-            </h4>
-            <!-- TODO: Add list -->
-          </div>
-          <div class="col-md-4">
-            <span class="mx-auto mb-3">
-              <!-- TODO: Add icon -->
-            </span>
-            <h4>
-              <strong>Back End</strong>
-            </h4>
-            <!-- TODO: Add list -->
-          </div>
-          <div class="col-md-4">
-            <span class="mx-auto mb-3">
-              <!-- TODO: Add icon -->
-            </span>
-            <h4>
-              <strong>Design</strong>
-            </h4>
-            <!-- TODO: Add list -->
-          </div>
-        </div>
-      </div>
-    </section>
 
     <footer></footer>
 

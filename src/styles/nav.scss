@@ -1,0 +1,153 @@
+@import 'style';
+
+/* Top nav */
+.navbar {
+  align-items: end !important;
+}
+
+.brand {
+  width: 4em;
+  height: auto;
+}
+
+.logo {
+  height: 5em;
+  width: auto;
+}
+
+.nav-item {
+  padding: 0 12px;
+}
+
+.nav-item:not(:last-child) {
+  color: $cornflower;
+  border-bottom: $cornflower solid;
+}
+
+.nav-item:not(:last-child):hover {
+  color: $white;
+  border-bottom: $white solid;
+}
+
+.nav-item:last-child {
+  color: $mirage;
+  border-bottom: $mirage solid;
+}
+
+.nav-item .nav-link {
+  color: inherit;
+  font-weight: 500;
+  font-size: medium;
+}
+
+#icon {
+  z-index: 2;
+}
+
+.menu {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 0px 16px;
+  width: fit-content;
+  height: 2.5em;
+  line-height: 2.5;
+  color: $cornflower;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 2px $cornflower;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.menu:hover {
+  color: $gallery;
+  background-color: $cornflower;
+}
+
+/* Side nav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: $mirage;
+  overflow-x: hidden;
+  padding-top: 8em;
+  transition: 0.5s;
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-transform: uppercase;
+    padding: 8px 8px 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: $gallery;
+    display: block;
+    transition: 0.3s;
+  }
+  a:hover {
+    color: $white;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.icon-bar {
+  position: absolute;
+  top: 70%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icon-bar {
+    display: none;
+  }
+}
+
+.link {
+  color: $cornflower;
+  border-right: $cornflower solid;
+
+  i {
+    color: inherit;
+  }
+  i:hover {
+    color: $white;
+  }
+}
+
+.link:hover {
+  color: $white;
+  border-right: $white solid;
+}
+
+.line {
+  color: $mirage;
+  border-right: $mirage solid;
+
+  i {
+    color: $mirage;
+  }
+}
