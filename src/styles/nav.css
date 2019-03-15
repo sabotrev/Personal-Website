@@ -165,18 +165,22 @@ p {
   height: auto;
 }
 
-#about {
-  margin: 5em 0;
-  width: 100%;
-  min-height: fit-content;
-}
-
 .heading {
   color: #0764d5;
   margin: 1em 0;
   font-weight: 900;
   font-family: "Work Sans", sans-serif;
   font-size: 2em;
+}
+
+#about {
+  width: 100%;
+  min-height: fit-content;
+}
+
+.jumbotron {
+  background-color: #0764d5;
+  color: #fff;
 }
 
 .underline {
@@ -188,15 +192,26 @@ p {
 }
 
 #skills {
-  margin: 5em 0;
   width: 100%;
   min-height: fit-content;
+}
+
+.card-img-top {
+  height: 10em;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #experience {
   margin: 5em 0;
   width: 100%;
   min-height: fit-content;
+}
+
+.media {
+  padding: 1.25rem;
 }
 
 footer {

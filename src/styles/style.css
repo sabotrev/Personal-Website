@@ -174,7 +174,6 @@ p {
 }
 
 #about {
-  margin: 5em 0;
   width: 100%;
   min-height: fit-content;
 }
@@ -193,7 +192,6 @@ p {
 }
 
 #skills {
-  margin: 5em 0;
   width: 100%;
   min-height: fit-content;
 }
@@ -210,6 +208,10 @@ ul {
   margin: 5em 0;
   width: 100%;
   min-height: fit-content;
+}
+
+.media {
+  padding: 1.25rem;
 }
 
 footer {
