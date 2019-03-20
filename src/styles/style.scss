@@ -1,10 +1,9 @@
 // Colors
-$white: #fff;
-$catskill-white: #f7f9fb;
-$gallery: #ebebeb;
-$cornflower: #9fc1ea;
-$science-blue: #0764d5;
-$mirage: #1b222b;
+$primary: #fff; // white
+$primaryAccent: #f7f9fb; // catskill-white
+$secondary: #0764d5; // science-blue
+$secondaryAccent: #1b222b; // mirage
+$tertiary: #9fc1ea; // cornflower
 
 // Font
 $title-font: 'Work Sans', sans-serif;
@@ -12,11 +11,10 @@ $body-font: 'Roboto', sans-serif;
 
 html {
   font-family: $body-font;
-  background: linear-gradient(to bottom, $catskill-white, $white);
+  background-color: $tertiary;
 }
 
 body {
-  background: linear-gradient(to bottom, $catskill-white, $white);
   overflow-x: hidden;
   overflow-y: overlay;
   font-size: 1rem;
@@ -83,7 +81,7 @@ p {
 
 /* Architecture */
 .hero-wrap {
-  background: linear-gradient(to top, $science-blue 0%, $science-blue 100%);
+  background-color: $primary;
 }
 
 #icon {
@@ -98,8 +96,8 @@ p {
   height: 80vh;
   width: 100%;
   min-height: fit-content;
-  color: $white;
-  padding: 5em 0 2em 0;
+  color: $secondary;
+  padding: 9em 0 2em 0;
 }
 
 .section {
@@ -116,7 +114,7 @@ p {
 .subtitle-intro {
   font-size: 2.5em;
   font-weight: 200;
-  color: $white;
+  color: $secondary;
   opacity: 0.8;
   text-transform: uppercase;
   margin: 20px 0 60px 0;
@@ -148,8 +146,8 @@ p {
   width: 100%;
   height: 100%;
   content: attr(data-heading);
-  border-bottom: solid $mirage;
-  color: $white;
+  border-bottom: solid $secondaryAccent;
+  color: $secondary;
   transition: color 0.3s;
   transform: rotateX(-90deg);
   transform-origin: 50% 0;
@@ -163,10 +161,12 @@ p {
 }
 
 .btn-contact {
-  background-color: $white;
-  color: $science-blue;
+  background-color: $secondary;
+  color: $primary;
+  border-radius: unset;
 
   a {
+    color: $primary;
     text-decoration: none;
   }  
 }
@@ -181,7 +181,7 @@ p {
 }
 
 .heading {
-  color: $science-blue;
+  color: $primary;
   margin: 1em 0;
   font-weight: 900;
   font-family: $title-font;
@@ -191,19 +191,20 @@ p {
 #about {
   width: 100%;
   min-height: fit-content;
+  background-color: $secondary;
 }
 
 .jumbotron {
-  background-color: $science-blue;
-  color: $white;
+  background-color: $secondary;
+  color: $primary;
 }
 
 .underline {
-  border-bottom: solid $mirage;
+  border-bottom: solid $secondaryAccent;
 }
 
 .info-text {
-  color: $mirage;
+  color: $secondaryAccent;
 }
 
 #skills {
@@ -230,6 +231,6 @@ ul {
 }
 
 footer {
-  background-color: $mirage;
+  background-color: $secondaryAccent;
   height: 20vh;
 }
