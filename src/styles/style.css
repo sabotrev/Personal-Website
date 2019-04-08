@@ -6,9 +6,29 @@ html {
 body {
   overflow-x: hidden;
   overflow-y: overlay;
-  font-size: 1rem;
+  font-size: 12px;
 }
 
+@media (min-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 24px;
+  }
+}
 .container-fluid {
   padding-top: 15px;
 }
@@ -210,6 +230,11 @@ ul {
   margin: 5em 0;
   width: 100%;
   min-height: fit-content;
+}
+
+.logo {
+  width: 5em;
+  height: auto;
 }
 
 .media {

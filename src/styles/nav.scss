@@ -1,6 +1,5 @@
 @import 'style';
 
-/* Top nav */
 .navbar {
   align-items: end !important;
 }
@@ -16,28 +15,36 @@
 }
 
 .nav-item {
-  padding: 0 12px;
+  padding: 0 1rem;
+  .nav-link {
+    color: inherit;
+    font-weight: 500;
+    font-size: medium;
+  }
 }
 
-.nav-item:not(:last-child) {
+.nav-item:not(:last-child), .link-item:not(:last-child) {
   color: $tertiary;
   border-bottom: $tertiary solid;
 }
 
-.nav-item:not(:last-child):hover {
+.nav-item:not(:last-child):hover, .link-item:not(:last-child):hover {
   color: $secondary;
   border-bottom: $secondary solid;
 }
 
 .nav-item:last-child {
-  color: $secondaryAccent;
+  color: $secondaryAccent !important;
   border-bottom: $secondaryAccent solid;
 }
 
-.nav-item .nav-link {
-  color: inherit;
-  font-weight: 500;
-  font-size: medium;
+.link-item:last-child {
+  color: $primary !important;
+  border-bottom: $primary solid;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 #icon {
@@ -132,32 +139,4 @@ footer {
 
 .footer-nav a {
   width: 3rem;
-}
-
-.link {
-  color: $tertiary;
-  border-bottom: $tertiary solid;
-
-  i {
-    color: $tertiary;
-  }
-}
-
-.link:hover {
-  color: $secondary;
-  border-bottom: $secondary solid;
-}
-
-.line {
-  color: $primaryAccent;
-  border-bottom: $primaryAccent solid;
-
-  i {
-    color: $primaryAccent;
-  }
-}
-
-.line:hover {
-  color: $primary;
-  border-bottom: $primary solid;
 }

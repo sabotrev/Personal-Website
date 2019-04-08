@@ -17,7 +17,35 @@ html {
 body {
   overflow-x: hidden;
   overflow-y: overlay;
-  font-size: 1rem;
+  font-size: 12px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  body {
+    font-size: 24px;
+  }
 }
 
 .container-fluid {
@@ -224,6 +252,11 @@ ul {
   margin: 5em 0;
   width: 100%;
   min-height: fit-content;
+}
+
+.logo {
+  width: 5em;
+  height: auto;
 }
 
 .media {
